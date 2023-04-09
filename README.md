@@ -1,9 +1,12 @@
 Fasta to Structure Converter
 Version: 1.0.0
+
 Platform: Cross-platform (Windows, macOS, Linux) with a Windows-built executable available
 
 Description
-This application is a converter for FASTA files into Structure format. It allows you to select multiple FASTA files, identify variable sites, and convert the sequences into binary format. The output will be a concatenated file containing all the processed sequences in Structure format.
+This application is a converter for FASTA files into Structure format. 
+It allows you to select multiple FASTA files, identify variable sites, and convert the sequences into binary format. 
+The output will be a concatenated file containing all the processed sequences in Structure format.
 
 Features
 Select multiple FASTA files

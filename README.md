@@ -24,7 +24,9 @@ bash
 Copy code
 pip install biopython
 Windows Executable
-A pre-built Windows executable is available for download. You don't need to install Python or any additional libraries if you use the executable. Download the fasta_to_structure.exe file and run it on your Windows system.
+A pre-built Windows executable is available for download. 
+You don't need to install Python or any additional libraries if you use the executable. 
+Download the Fasta2Structure.exe file and run it on your Windows system.
 
 Usage
 Python Script
@@ -42,6 +44,7 @@ In both cases:
 Click on "Select FASTA files" button to open a file dialog and select the FASTA files you want to process
 The application will process the files, displaying the progress and a preview of the converted data
 Once the conversion is complete, a Structure format file named "Structure.str" will be saved in the same directory as the script or executable
+
 Troubleshooting
 If you encounter any issues or errors during the conversion process, please check the console output for more details.
 

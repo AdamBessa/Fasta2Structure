@@ -5,9 +5,11 @@ This program is a simple graphical user interface (GUI) tool that allows you to 
 Link to Windows version: https://1drv.ms/u/s!Akxz__NDrSavhe9nDlYPCYg70mMcww?e=2JtsDu
 
 Dependencies
-To run the script, you need Python 3.6 or higher and the Biopython library. You can install Biopython via pip:
-
+To run the progeram, you need Python 3.6 or higher, the Biopython library, and the tkinter library (included with Python by default). 
+You can install Biopython via pip:
 pip install biopython
+
+
 Preparing Multiple DNA Alignments
 Before using this tool, make sure your DNA alignment files are in the FASTA format. Each file should contain aligned sequences of the same loci for different individuals or populations. The program will identify variable sites in each alignment and concatenate them into a single output file in Structure format.
 

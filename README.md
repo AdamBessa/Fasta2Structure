@@ -16,7 +16,6 @@ For the concatenation process to work correctly, make sure the sequence names (i
 Here is an example of correctly formatted FASTA files:
 
 Alignment 1:
-
 >Sample1
 ATGCATGCATGCTAGCTAGCTAGCTAG
 >Sample2
@@ -26,7 +25,6 @@ ATGCATGCATGCTAGCTAGCTAGCTAG
 File 2:
 
 Alignment 2:
-
 >Sample1
 CGTACGTACGTACGTACGTACGTACGTA
 >Sample2

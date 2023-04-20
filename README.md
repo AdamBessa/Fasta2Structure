@@ -2,11 +2,11 @@ Fasta2Structure
 
 This program is a simple graphical user interface (GUI) tool that allows you to concatenate and convert multiple FASTA files into a Structure format file. It is useful for researchers working with DNA alignments who want to perform population genetics analyses using the Structure software. The program is compatible with different platforms, including Windows, macOS, and Linux. This README provides instructions for running the tool on Windows.
 
+Link to Windows version: https://1drv.ms/u/s!Akxz__NDrSavhe9nDlYPCYg70mMcww?e=2JtsDu
+
 Dependencies
 To run the script, you need Python 3.6 or higher and the Biopython library. You can install Biopython via pip:
 
-bash
-Copy code
 pip install biopython
 Preparing Multiple DNA Alignments
 Before using this tool, make sure your DNA alignment files are in the FASTA format. Each file should contain aligned sequences of the same loci for different individuals or populations. The program will identify variable sites in each alignment and concatenate them into a single output file in Structure format.

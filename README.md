@@ -36,6 +36,8 @@ os, threading, traceback, and logging: These are standard Python libraries used 
 Preparing Multiple DNA Alignments
 Before using this tool, make sure your DNA alignment files are in the FASTA format. Each file should contain aligned sequences of the same loci for different individuals or populations. The program will identify variable sites in each alignment and concatenate them into a single output file in Structure format.
 
+Example data is provided in the XXXXXXXXX folder and will produce the output files contained in the XXXXXXX folder.
+
 For the concatenation process to work correctly, make sure the sequence names (identifiers) are consistent across all input FASTA files. The sequence names should be the same for the same individual or population in each file.
 
 Here is an example of correctly formatted FASTA files:

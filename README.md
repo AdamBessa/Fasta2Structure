@@ -10,11 +10,17 @@ Features:
 User-friendly GUI: Easy to operate, even for those unfamiliar with command-line tools.
 Supports multiple files: Select and process multiple Fasta files simultaneously.
 Variable site identification: Identifies variable sites in each file. A site is variable if it contains more than one distinct character across all sequences in the alignment.
-Binary conversion: Converts the sequence of each variable site into binary form.
+
+Binary conversion: 
+Converts the sequence of each variable site into binary form.
 Missing sequence padding: If sequences are missing from certain files, these are filled with -9 to maintain consistency of sequence lengths.
 Output preview: Preview the converted sequences in the GUI before saving.
-File output: Writes the converted sequences to a file named "Structure.str".
-Progress tracking: Provides a progress bar and status messages for user feedback.
+
+File output: 
+Writes the converted sequences to a file named "Structure.str".
+
+Progress tracking: 
+Provides a progress bar and status messages for user feedback.
 
 Dependencies:
 This program depends on the following Python packages:

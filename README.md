@@ -92,6 +92,24 @@ Enjoy using the Fasta to Structure Converter!
 
 Remember, if you have any questions or run into any problems, please feel free to open an issue on our GitHub repository. Your feedback is greatly appreciated and helps to improve our tool.
 
+Maintenance
+1.	Program Maintenance: 
+• Bug Fixes: Any bugs reported by users or identified by the program developer will be investigated and resolved by the developer. The frequency of bug fixes will be determined by the severity of the bug and its impact on the program's functionality. 
+• Updates and Enhancements: Updates will be carried out as necessary to maintain the program's efficiency. Enhancements may include adding new features, performance upgrades, and user interface updates. 
+• Dependencies: This program relies on the BioPython module and the Tkinter library for Python. These dependencies will be monitored for any updates. If these libraries are updated, the program will be tested with the new versions to ensure compatibility.
+
+2.	User Feedback: 
+• User feedback is crucial for the continuous improvement of the program. A forum will be established on Google Groups (https://groups.google.com/g/fasta2structure) to facilitate communication with users. The developer will monitor this forum and consider inquiries and suggestions for program improvement.
+
+4.	Documentation: 
+•The program's documentation will be maintained and updated as necessary.
+
+5.	Testing: 
+•After each update or bug fix, tests will be conducted to ensure that the program is still functioning as expected. The tests will include basic functionality, usability testing, and stress testing.
+
+These maintenance procedures will be reviewed and updated as necessary to ensure continuous and efficient functionality.
+
+
 
 
 

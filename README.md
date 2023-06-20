@@ -1,96 +1,72 @@
-Fasta2Structure
+Fasta2Structure: A User-Friendly Tool for Converting Multiple Aligned FASTA Files to STRUCTURE Format
 
-The "Fasta to Structure" Converter is a Python-based tool that allows users to concatenate and convert multiple Fasta files into a Structure format file. This tool is designed for researchers working with DNA alignments who want to perform population genetics analyses using the Structure software.
+Fasta@Structure is a bioinformatics tool designed to facilitate the manipulation of genomic sequence data. It converts FASTA files into a binary structure, highlighting variable sites within multiple sequences.
 
-The program identifies variable sites in each file, converts these sites into binary form, and concatenates the results into a single file. It also provides a user-friendly graphical user interface (GUI) for easy operation. It is compatible with various platforms, including Windows, macOS, and Linux.
+Dependencies
+Python 3.7 or higher
+tkinter (usually comes pre-installed with Python)
+BioPython 1.78 or higher
+Installation
 
-The converted files can be used in a variety of genetic analyses, making this tool invaluable for geneticists, bioinformaticians, and anyone else working with genetic sequence data.
+Linux
+Update the system and install Python and pip:
+sudo apt-get update
+sudo apt-get install python3.8
+sudo apt-get install python3-pip
 
-Features:
-User-friendly GUI: Easy to operate, even for those unfamiliar with command-line tools.
-Supports multiple files: Select and process multiple Fasta files simultaneously.
-Variable site identification: Identifies variable sites in each file. A site is variable if it contains more than one distinct character across all sequences in the alignment.
+Install Biopython:
+pip3 install biopython
 
-Binary conversion: 
-Converts the sequence of each variable site into binary form.
-Missing sequence padding: If sequences are missing from certain files, these are filled with -9 to maintain consistency of sequence lengths.
-Output preview: Preview the converted sequences in the GUI before saving.
+Mac
+Install Homebrew:
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-File output: 
-Writes the converted sequences to a file named "Structure.str".
+Install Python and pip:
+brew install python3
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python3 get-pip.py
 
-Progress tracking: 
-Provides a progress bar and status messages for user feedback.
+Install Biopython:
+pip3 install biopython
 
-Dependencies:
-This program depends on the following Python packages:
+Usage
+To run the program, navigate to the directory containing the python script and run the following command in the terminal:
+python3 fasta_to_structure.py
 
-Python 3: This is the main language in which the tool is written. Python 3.6 or newer is recommended.
+In the graphical interface that appears, click on the "Select FASTA files" button to select the FASTA files you wish to convert. The result will be displayed in the "Preview" area and saved as "Structure.str" in the same directory.
 
-Tkinter: This is used to create the graphical user interface. It comes pre-installed with Python for Windows. Linux users may need to install it manually.
 
-Biopython: This is used to read and manipulate the Fasta files. It can be installed via pip: pip install biopython.
+![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/85827670-c6db-4463-b625-f4148fa56d3a)
 
-os, threading, traceback, and logging: These are standard Python libraries used for handling file paths, multithreading, error tracking, and event logging respectively. They come pre-installed with Python.
 
-Preparing Multiple DNA Alignments
-Before using this tool, make sure your DNA alignment files are in the FASTA format. Each file should contain aligned sequences of the same loci for different individuals or populations. The program will identify variable sites in each alignment and concatenate them into a single output file in Structure format.
+The variable sites and any errors that occur during processing are logged to a log file (log.log).
 
-Example data is provided in the XXXXXXXXX folder and will produce the output files contained in the XXXXXXX folder.
+Data Preparation
+The input data for this program are FASTA files. Each FASTA file should contain a sequence alignment, meaning all sequences in the file have the same length.
 
-For the concatenation process to work correctly, make sure the sequence names (identifiers) are consistent across all input FASTA files. The sequence names should be the same for the same individual or population in each file.
+Example of a FASTA file:
 
-Here is an example of correctly formatted FASTA files:
+shell
+Copy code
+>seq1
+ATGCATGCATGC
+>seq2
+ATGCATGCATGT
+>seq3
+ATGAATGCATGC
+>
+Outputs
+After running the program, the results are displayed in the "Preview" area of the graphical user interface and also saved to a file called "Structure.str" in the same directory as the Python script.
 
-Alignment 1:
->Sample1
-ATGCATGCATGCTAGCTAGCTAGCTAG
->Sample2
-ATGCATGCATGCTAGCTAGCTAGCTAG
->Sample3
-ATGCATGCATGCTAGCTAGCTAGCTAG
-File 2:
+Example of output:
+seq1 0 0 
+seq2 0 1 
+seq3 2 0 
 
-Alignment 2:
->Sample1
-CGTACGTACGTACGTACGTACGTACGTA
->Sample2
-CGTACGTACGTACGTACGTACGTACGTA
->Sample3
-CGTACGTACGTACGTACGTACGTACGTA
+Processing activities, including the identified variable sites and any errors that occurred during processing, are logged to a file called "log".
 
-Make sure your alignments do not have any extra characters or incorrect formatting, as this may cause errors during processing.
-
-Installation:
-Make sure Python 3 is installed on your system. If not, download and install it from here.
-Install necessary Python packages. Open your terminal and type the following commands:
-
-pip install tkinter
-pip install biopython
-
-Running the program:
-Download the script file.
-Open the terminal in the script's directory.
-Run the script by typing python Fasta2Structure.py in the terminal.
-
-Testing:
-Run the program.
-Click on the "Select FASTA files" button.
-Choose one or more Fasta files for processing.
-Wait for the conversion to complete. You can monitor the progress via the progress bar and status messages.
-Check the "Structure.str" file in the script's directory.
-
-![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/e4f68137-fdc9-4858-adbf-1e70a2014d11)
-
-Note:
-The identifiers of sequences from each individual must be named consistently across different alignment files for accurate conversion. The identifier in Fasta files is the string that follows the ">" symbol in each sequence record. If the identifiers do not match, the sequences will be treated as from different individuals.
-
-Troubleshooting:
-If any errors occur during conversion, they will be logged in a file named "log.log" in the script's directory. This file can provide information about the problem and help in troubleshooting.
-
-Enjoy using the Fasta to Structure Converter!
-
-Remember, if you have any questions or run into any problems, please feel free to open an issue on our GitHub repository. Your feedback is greatly appreciated and helps to improve our tool.
+Tests
+Check the functionality of the program using sample FASTA files. Observe the results in the "Preview" area and the "Structure.str" output file, and check if they are consistent with the expected.
 
 Maintenance
 1.	Program Maintenance: 

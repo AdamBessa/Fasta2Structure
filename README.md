@@ -9,6 +9,7 @@ Linux
 Open a terminal and execute the following commands:
 
 ![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/259ef10a-2569-464d-8972-fba948fd7a73)
+
 macOS
 Open a terminal and execute the following commands:
 

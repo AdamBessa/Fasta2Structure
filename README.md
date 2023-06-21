@@ -5,6 +5,7 @@ The STRUCTURE software has gained popularity as a tool for population structure 
 
 
 Dependencies and Version
+
 This program depends on the following Python libraries, which need to be installed in order for the program to run properly:
 
 Python: The recommended version for this program is Python 3.7 or higher.

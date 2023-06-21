@@ -56,7 +56,9 @@ Run the program with the following command:
 A window will open. Click on the "Select FASTA files" button and choose the FASTA files you wish to convert. The program will start processing the files and you will see the progress bar being updated. When the conversion is complete, the result will be shown in the "Preview" area and a .str file will be saved in the current directory named "Structure.str".
 ![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/85827670-c6db-4463-b625-f4148fa56d3a)
 
+
 Windows Version
+
 For users running the Windows operating system, there is no need for a separate installation process. The program is delivered as a standalone executable file that can be run by double-clicking the file. This version includes all the necessary dependencies, so you don't need to install anything separately. Simply download the executable file, and you can start using the program by double-clicking on it.
 
 Remember that the use remains the same: upon opening, a window will appear where you can click on the "Select FASTA files" button and choose the FASTA files you wish to convert. Progress will be displayed in the same way as described above.

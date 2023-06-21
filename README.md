@@ -32,7 +32,9 @@ For the FASTA input:
 
 ![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/284fb7e3-9389-417c-b6b9-71d3e2e8db11)
 
+
 The output will be:
+
 ![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/1ba14991-06de-4613-a0bf-f3e2e878b4b3)
 
 Log File

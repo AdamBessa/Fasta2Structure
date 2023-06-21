@@ -41,12 +41,25 @@ Open a terminal and execute the following commands:
 Usage
 After the dependencies have been installed, you can run the program from the terminal:
 
-python Fasta2Structure.py
+For Linux/macOS:
+
+![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/5f864f99-a1bb-45bb-8c09-3bb432e6cb50)
+
+Replace "YourUsername" with your actual username.
+
+Run the program with the following command:
+
+
+![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/1733b874-b4ed-45f7-832c-831f7b0b52fe)
+
 
 A window will open. Click on the "Select FASTA files" button and choose the FASTA files you wish to convert. The program will start processing the files and you will see the progress bar being updated. When the conversion is complete, the result will be shown in the "Preview" area and a .str file will be saved in the current directory named "Structure.str".
 ![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/85827670-c6db-4463-b625-f4148fa56d3a)
 
+Windows Version
+For users running the Windows operating system, there is no need for a separate installation process. The program is delivered as a standalone executable file that can be run by double-clicking the file. This version includes all the necessary dependencies, so you don't need to install anything separately. Simply download the executable file, and you can start using the program by double-clicking on it.
 
+Remember that the use remains the same: upon opening, a window will appear where you can click on the "Select FASTA files" button and choose the FASTA files you wish to convert. Progress will be displayed in the same way as described above.
 
 Output Examples
 Here are some examples of outputs you can expect when using this program.
@@ -67,10 +80,6 @@ Example of a log file entry:
 
 ![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/b10b922b-ed42-481b-afd8-7e035c760732)
 
-Windows Version
-For users running the Windows operating system, there is no need for a separate installation process. The program is delivered as a standalone executable file that can be run by double-clicking the file. This version includes all the necessary dependencies, so you don't need to install anything separately. Simply download the executable file, and you can start using the program by double-clicking on it.
-
-Remember that the use remains the same: upon opening, a window will appear where you can click on the "Select FASTA files" button and choose the FASTA files you wish to convert. Progress will be displayed in the same way as described above.
 
 Maintenance
 1.	Program Maintenance: 

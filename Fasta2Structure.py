@@ -6,6 +6,9 @@ from Bio import AlignIO
 import os
 import threading
 import traceback
+import logging
+
+logging.basicConfig(filename='log.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 
 def convert_to_binary(sequence):
@@ -22,43 +25,46 @@ def get_variable_sites(alignment):
     return variable_sites
 
 
-def process_fasta_file(filepath, sequence_dict, file_count, progress_callback):
+def process_fasta_file(filepath, sequence_dict, file_index, progress_callback):
     try:
         alignment = AlignIO.read(filepath, "fasta")
         variable_sites = get_variable_sites(alignment)
+
+        logging.info(f'Variable sites for {filepath}: {variable_sites}')
 
         for record in alignment:
             variable_site_sequence = ''.join([record.seq[i] for i in variable_sites])
             binary_sequence = convert_to_binary(variable_site_sequence)
             if record.id in sequence_dict:
-                sequence_dict[record.id][0] += " " + binary_sequence
-                sequence_dict[record.id][1] += 1
+                sequence_dict[record.id][file_index] = binary_sequence
             else:
-                sequence_dict[record.id] = [binary_sequence, 1]
+                sequence_dict[record.id] = {file_index: binary_sequence}
 
         variable_sites_count = len(variable_sites)
         progress_callback(variable_sites_count)
         return variable_sites_count
-    except:
+    except Exception as e:
+        logging.error(f'An error occurred: {e}')
         traceback.print_exc()
         progress_callback(0)
         return 0
 
 
-def pad_missing_sequences(sequence_dict, file_count, variable_sites_per_file):
-    for seq_id, (binary_sequence, count) in sequence_dict.items():
-        missing_count = file_count - count
-        if missing_count > 0:
-            total_sites = sum(variable_sites_per_file)
-            present_sites = sum(variable_sites_per_file[-count:])
-            pad_length = total_sites - present_sites
-            pad_string = " ".join(["-9"] * pad_length) + " "
-            sequence_dict[seq_id][0] += pad_string
+def pad_missing_sequences(sequence_dict, variable_sites_per_file):
+    for seq_id, sequences in sequence_dict.items():
+        padded_sequences = []
+        for i in range(len(variable_sites_per_file)):
+            if i in sequences:
+                padded_sequences.append(sequences[i])
+            else:
+                pad_string = " ".join(["-9"] * variable_sites_per_file[i]) + " "
+                padded_sequences.append(pad_string)
+        sequence_dict[seq_id] = ' '.join(padded_sequences)
 
 
 def concatenate_results(sequence_dict):
     concatenated_results = []
-    for seq_id, (binary_sequence, _) in sequence_dict.items():
+    for seq_id, binary_sequence in sequence_dict.items():
         concatenated_results.append(f"{seq_id} {binary_sequence}\n")
     return ''.join(concatenated_results)
 
@@ -79,15 +85,17 @@ def browse_files():
     progress_label = tk.Label(root, text="")
     progress_label.pack(pady=5)
 
+    logging.info(f'{len(filepaths)} FASTA files selected.')
+
     def process_files():
         try:
             for i, filepath in enumerate(filepaths):
-                variable_sites_count = process_fasta_file(filepath, sequence_dict, len(filepaths),
+                variable_sites_count = process_fasta_file(filepath, sequence_dict, i,
                                                           lambda value: progress_value.set(i + 1) or progress_label.configure(
                                                               text=f"Processing file {i + 1}/{len(filepaths)} ({value} variable sites)"))
                 variable_sites_per_file.append(variable_sites_count)
 
-            pad_missing_sequences(sequence_dict, len(filepaths), variable_sites_per_file)
+            pad_missing_sequences(sequence_dict, variable_sites_per_file)
             concatenated_results = concatenate_results(sequence_dict)
 
             preview_textbox.configure(state='normal')
@@ -102,7 +110,8 @@ def browse_files():
 
             output_label.configure(text=f"Converted files saved as: {output_filename}")
             progress_label.configure(text="Conversion completed successfully!")
-        except:
+        except Exception as e:
+            logging.error(f'An error occurred: {e}')
             traceback.print_exc()
             progress_label.configure(text="An error occurred during the conversion process.")
 

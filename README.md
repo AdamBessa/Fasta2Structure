@@ -70,6 +70,7 @@ For the FASTA input:
 
 ![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/284fb7e3-9389-417c-b6b9-71d3e2e8db11)
 
+Example files that you can use to test this program are provided in the "Example_data" folder. These files are in FASTA format and can be used to observe how the program functions and to understand the output it generates.
 
 The output will be:
 

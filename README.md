@@ -10,73 +10,41 @@ Open a terminal and execute the following commands:
 
 ![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/259ef10a-2569-464d-8972-fba948fd7a73)
 
+macOS
+Open a terminal and execute the following commands:
+![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/8a5ab18b-746a-4cab-8f8c-c52b6cf304de)
 
-
-Dependencies
-Python 3.7 or higher
-tkinter (usually comes pre-installed with Python)
-BioPython 1.78 or higher
-Installation
-
-Linux
-Update the system and install Python and pip:
-sudo apt-get update
-sudo apt-get install python3.8
-sudo apt-get install python3-pip
-
-Install Biopython:
-pip3 install biopython
-
-Mac
-Install Homebrew:
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
-Install Python and pip:
-brew install python3
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-python3 get-pip.py
-
-Install Biopython:
-pip3 install biopython
 
 Usage
-To run the program, navigate to the directory containing the python script and run the following command in the terminal:
-python3 fasta_to_structure.py
+After the dependencies have been installed, you can run the program from the terminal:
 
-In the graphical interface that appears, click on the "Select FASTA files" button to select the FASTA files you wish to convert. The result will be displayed in the "Preview" area and saved as "Structure.str" in the same directory.
+python Fasta2Structure.py
 
-
+A window will open. Click on the "Select FASTA files" button and choose the FASTA files you wish to convert. The program will start processing the files and you will see the progress bar being updated. When the conversion is complete, the result will be shown in the "Preview" area and a .str file will be saved in the current directory named "Structure.str".
 ![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/85827670-c6db-4463-b625-f4148fa56d3a)
 
 
-The variable sites and any errors that occur during processing are logged to a log file (log.log).
 
-Data Preparation
-The input data for this program are FASTA files. Each FASTA file should contain a sequence alignment, meaning all sequences in the file have the same length.
+Output Examples
+Here are some examples of outputs you can expect when using this program.
 
-Example of a FASTA file:
+For the FASTA input:
 
-shell
-Copy code
->seq1
-ATGCATGCATGC
->seq2
-ATGCATGCATGT
->seq3
-ATGAATGCATGC
->
-Outputs
-After running the program, the results are displayed in the "Preview" area of the graphical user interface and also saved to a file called "Structure.str" in the same directory as the Python script.
+![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/284fb7e3-9389-417c-b6b9-71d3e2e8db11)
 
-Example of output:
-seq1 0 0 
-seq2 0 1 
-seq3 2 0 
+The output will be:
+![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/1ba14991-06de-4613-a0bf-f3e2e878b4b3)
 
-Processing activities, including the identified variable sites and any errors that occurred during processing, are logged to a file called "log".
+Log File
+The program logs information about the conversion process in a log file called log.log. This file logs the variable sites for each processed FASTA file and any errors that may have occurred during the conversion. You can check this file for more information if something goes wrong. The entries in the log file follow the format %(name)s - %(levelname)s - %(message)s and are written at the INFO logging level. This means that all messages at the INFO, WARNING, ERROR, and CRITICAL levels will be logged.
 
-Tests
-Check the functionality of the program using sample FASTA files. Observe the results in the "Preview" area and the "Structure.str" output file, and check if they are consistent with the expected.
+Example of a log file entry:
+![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/b10b922b-ed42-481b-afd8-7e035c760732)
+
+Windows Version
+For users running the Windows operating system, there is no need for a separate installation process. The program is delivered as a standalone executable file that can be run by double-clicking the file. This version includes all the necessary dependencies, so you don't need to install anything separately. Simply download the executable file, and you can start using the program by double-clicking on it.
+
+Remember that the use remains the same: upon opening, a window will appear where you can click on the "Select FASTA files" button and choose the FASTA files you wish to convert. Progress will be displayed in the same way as described above.
 
 Maintenance
 1.	Program Maintenance: 

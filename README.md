@@ -8,8 +8,12 @@ Dependencies and Version
 
 This program depends on the following Python libraries, which need to be installed in order for the program to run properly:
 
-Python: The recommended version for this program is Python 3.7 or higher.
-Tkinter: This is a standard library for Python 3 and hence its version will be tied to the installed Python version. It should be compatible with Python 3.7 or higher.
+Python: 
+
+The recommended version for this program is Python 3.7 or higher.
+Tkinter: 
+
+This is a standard library for Python 3 and hence its version will be tied to the installed Python version. It should be compatible with Python 3.7 or higher.
 
 Biopython: The recommended version for this program is Biopython 1.78 or higher.
 
@@ -77,6 +81,7 @@ The output will be:
 ![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/1ba14991-06de-4613-a0bf-f3e2e878b4b3)
 
 Log File
+
 The program logs information about the conversion process in a log file called log.log. This file logs the variable sites for each processed FASTA file and any errors that may have occurred during the conversion. You can check this file for more information if something goes wrong. The entries in the log file follow the format %(name)s - %(levelname)s - %(message)s and are written at the INFO logging level. This means that all messages at the INFO, WARNING, ERROR, and CRITICAL levels will be logged.
 
 Example of a log file entry:
@@ -85,6 +90,7 @@ Example of a log file entry:
 
 
 Maintenance
+
 1.	Program Maintenance: 
 
 • Bug Fixes: Any bugs reported by users or identified by the program developer will be investigated and resolved by the developer. The frequency of bug fixes will be determined by the severity of the bug and its impact on the program's functionality. 

@@ -8,12 +8,9 @@ Dependencies and Version
 
 This program depends on the following Python libraries, which need to be installed in order for the program to run properly:
 
-Python: 
+Python: The recommended version for this program is Python 3.7 or higher.
 
-The recommended version for this program is Python 3.7 or higher.
-Tkinter: 
-
-This is a standard library for Python 3 and hence its version will be tied to the installed Python version. It should be compatible with Python 3.7 or higher.
+Tkinter: This is a standard library for Python 3 and hence its version will be tied to the installed Python version. It should be compatible with Python 3.7 or higher.
 
 Biopython: The recommended version for this program is Biopython 1.78 or higher.
 

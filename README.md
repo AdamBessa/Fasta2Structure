@@ -90,11 +90,17 @@ Maintenance
 
 1.	Program Maintenance: 
 
-• Bug Fixes: Any bugs reported by users or identified by the program developer will be investigated and resolved by the developer. The frequency of bug fixes will be determined by the severity of the bug and its impact on the program's functionality. 
+• Bug Fixes: 
 
-• Updates and Enhancements: Updates will be carried out as necessary to maintain the program's efficiency. Enhancements may include adding new features, performance upgrades, and user interface updates. 
+Any bugs reported by users or identified by the program developer will be investigated and resolved by the developer. The frequency of bug fixes will be determined by the severity of the bug and its impact on the program's functionality. 
 
-• Dependencies: This program relies on the BioPython module and the Tkinter library for Python. These dependencies will be monitored for any updates. If these libraries are updated, the program will be tested with the new versions to ensure compatibility.
+• Updates and Enhancements: 
+
+Updates will be carried out as necessary to maintain the program's efficiency. Enhancements may include adding new features, performance upgrades, and user interface updates. 
+
+• Dependencies: 
+
+This program relies on the BioPython module and the Tkinter library for Python. These dependencies will be monitored for any updates. If these libraries are updated, the program will be tested with the new versions to ensure compatibility.
 
 2.	User Feedback: 
 

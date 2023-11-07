@@ -77,6 +77,43 @@ The output will be:
 
 ![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/1ba14991-06de-4613-a0bf-f3e2e878b4b3)
 
+
+Post-Processing Instructions
+
+Once you have used the Fasta to Structure Conversion Tool to process your FASTA files, there's a crucial manual step you need to carry out to complete the data preparation for population genetic analysis. This step involves adding a "Pop ID" to each sample in the output "Structure.str" file.
+
+Understanding Pop ID
+
+A "Pop ID" is a unique identifier given to each sample that indicates which population the sample belongs to. This information is vital for population genetics studies as it allows the software to distinguish between samples from different populations.
+
+The concept of a population is based on the specific research questions and can be influenced by various biological and geographical factors. Populations can be differentiated by criteria such as:
+
+Geographic location: Different populations might be sampled from distinct locations.
+Phenotypic characteristics: Observable traits might define different groups within the studied species.
+Genetic lineage: Genetic data might suggest distinct lineages that are treated as separate populations.
+Ecological niches: Populations might be adapted to different ecological conditions.
+Since these criteria are highly specific to the context of each study, the tool leaves the assignment of Pop IDs to the researcher.
+
+Adding Pop IDs Manually
+To assign Pop IDs to your data in the "Structure.str" file, you'll need to follow these steps:
+
+Open the Output File:
+
+Open "Structure.str" using a text editor for simple formats or spreadsheet software like Microsoft Excel or Google Sheets for a more tabular format.
+Review Your Criteria for Population Assignment:
+
+Before you start editing the file, have a clear understanding of your criteria for defining populations.
+
+Insert Pop IDs:
+
+Add a new column or prepend each line with the Pop ID corresponding to each sample. Ensure that this identifier is consistent for all samples belonging to the same population.
+
+Save Your Changes:
+
+After inserting all Pop IDs, save the file.
+
+For more information on the STRUCTURE software format, please refer to the following link: https://web.stanford.edu/group/pritchardlab/structure.html.
+
 Log File
 
 The program logs information about the conversion process in a log file called log.log. This file logs the variable sites for each processed FASTA file and any errors that may have occurred during the conversion. You can check this file for more information if something goes wrong. The entries in the log file follow the format %(name)s - %(levelname)s - %(message)s and are written at the INFO logging level. This means that all messages at the INFO, WARNING, ERROR, and CRITICAL levels will be logged.

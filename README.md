@@ -114,7 +114,7 @@ Add a new column or prepend each line with the Pop ID corresponding to each samp
 
 Save Your Changes:
 
-After inserting all Pop IDs, save the file (ver .
+After inserting all Pop IDs, save the file (see Example_data/Results/Structure.str)
 
 For more information on the STRUCTURE software format, please refer to the following link: https://web.stanford.edu/group/pritchardlab/structure.html.
 

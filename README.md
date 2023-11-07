@@ -118,6 +118,9 @@ After inserting all Pop IDs, save the file (see Example_data/Results/Structure.s
 
 For more information on the STRUCTURE software format, please refer to the following link: https://web.stanford.edu/group/pritchardlab/structure.html.
 
+
+Note: Users may also add a count of loci or codes on the first line of the output file Structure.str, if necessary.
+
 Log File
 
 The program logs information about the conversion process in a log file called log.log. This file logs the variable sites for each processed FASTA file and any errors that may have occurred during the conversion. You can check this file for more information if something goes wrong. The entries in the log file follow the format %(name)s - %(levelname)s - %(message)s and are written at the INFO logging level. This means that all messages at the INFO, WARNING, ERROR, and CRITICAL levels will be logged.

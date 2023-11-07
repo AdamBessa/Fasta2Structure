@@ -89,9 +89,13 @@ A "Pop ID" is a unique identifier given to each sample that indicates which popu
 The concept of a population is based on the specific research questions and can be influenced by various biological and geographical factors. Populations can be differentiated by criteria such as:
 
 Geographic location: Different populations might be sampled from distinct locations.
+
 Phenotypic characteristics: Observable traits might define different groups within the studied species.
+
 Genetic lineage: Genetic data might suggest distinct lineages that are treated as separate populations.
+
 Ecological niches: Populations might be adapted to different ecological conditions.
+
 Since these criteria are highly specific to the context of each study, the tool leaves the assignment of Pop IDs to the researcher.
 
 Adding Pop IDs Manually
@@ -110,7 +114,7 @@ Add a new column or prepend each line with the Pop ID corresponding to each samp
 
 Save Your Changes:
 
-After inserting all Pop IDs, save the file.
+After inserting all Pop IDs, save the file (ver .
 
 For more information on the STRUCTURE software format, please refer to the following link: https://web.stanford.edu/group/pritchardlab/structure.html.
 

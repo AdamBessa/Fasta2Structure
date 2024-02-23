@@ -31,7 +31,10 @@ Dependencies Installation
 Linux
 Open a terminal and execute the following commands:
 
-![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/259ef10a-2569-464d-8972-fba948fd7a73)
+sudo apt-get update
+sudo apt-get install -y python3-tk python3-pip
+pip3 install biopython
+
 
 macOS
 Open a terminal and execute the following commands:

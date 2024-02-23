@@ -156,9 +156,9 @@ Log File
 The program logs information about the conversion process in a log file called log.log. This file logs the variable sites for each processed FASTA file and any errors that may have occurred during the conversion. You can check this file for more information if something goes wrong. The entries in the log file follow the format %(name)s - %(levelname)s - %(message)s and are written at the INFO logging level. This means that all messages at the INFO, WARNING, ERROR, and CRITICAL levels will be logged.
 
 Example of a log file entry:
-
-![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/b10b922b-ed42-481b-afd8-7e035c760732)
-
+```tex
+root - INFO - Variable sites for /path/to/file.fas: [1, 3]
+```
 
 Maintenance
 

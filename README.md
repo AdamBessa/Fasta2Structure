@@ -31,8 +31,11 @@ Dependencies Installation
 Linux
 Open a terminal and execute the following commands:
 
+
 sudo apt-get update
+
 sudo apt-get install -y python3-tk python3-pip
+
 pip3 install biopython
 
 

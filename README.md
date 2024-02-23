@@ -54,7 +54,10 @@ After the dependencies have been installed, you can run the program from the ter
 
 For Linux/macOS:
 
-![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/5f864f99-a1bb-45bb-8c09-3bb432e6cb50)
+
+cd ~/Desktop/fasta2structure
+
+
 
 Replace "YourUsername" with your actual username.
 

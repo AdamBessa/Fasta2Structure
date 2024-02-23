@@ -31,22 +31,20 @@ Dependencies Installation
 Linux
 Open a terminal and execute the following commands:
 
-
+```text
 sudo apt-get update
-
 sudo apt-get install -y python3-tk python3-pip
-
 pip3 install biopython
+```
 
 
 macOS
 Open a terminal and execute the following commands:
 
-
+```text
 brew install python3-tk
-
 pip3 install biopython
-
+```
 
 
 Usage

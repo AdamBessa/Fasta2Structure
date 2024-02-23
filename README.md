@@ -42,7 +42,11 @@ pip3 install biopython
 macOS
 Open a terminal and execute the following commands:
 
-![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/8a5ab18b-746a-4cab-8f8c-c52b6cf304de)
+
+brew install python3-tk
+
+pip3 install biopython
+
 
 
 Usage

@@ -91,8 +91,11 @@ AT-CCA
 Example files that you can use to test this program are provided in the "Example_data" folder. These files are in FASTA format and can be used to observe how the program functions and to understand the output it generates.
 
 The output will be:
+```text
+seq1 0 3 2 0 1 3
+seq2 0 -9 2 2 1 3
+```
 
-![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/1ba14991-06de-4613-a0bf-f3e2e878b4b3)
 
 
 Post-Processing Instructions

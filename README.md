@@ -52,9 +52,9 @@ After the dependencies have been installed, you can run the program from the ter
 
 For Linux/macOS:
 
-
+```text
 cd ~/Desktop/fasta2structure
-
+```
 
 
 Replace "YourUsername" with your actual username.
@@ -62,9 +62,9 @@ Replace "YourUsername" with your actual username.
 Run the program with the following command:
 
 
-
+```text
 python Fasta2Structure.py
-
+```
 
 
 A window will open. Click on the "Select FASTA files" button and choose the FASTA files you wish to convert. The program will start processing the files and you will see the progress bar being updated. When the conversion is complete, the result will be shown in the "Preview" area and a .str file will be saved in the current directory named "Structure.str".

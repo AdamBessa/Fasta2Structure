@@ -68,7 +68,17 @@ python Fasta2Structure.py
 
 
 A window will open. Click on the "Select FASTA files" button and choose the FASTA files you wish to convert. The program will start processing the files and you will see the progress bar being updated. When the conversion is complete, the result will be shown in the "Preview" area and a .str file will be saved in the current directory named "Structure.str".
+
+![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/c5e83473-58d3-4206-ab7b-216f004cff3d)
+
+
+
 ![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/85827670-c6db-4463-b625-f4148fa56d3a)
+
+
+
+![image](https://github.com/AdamBessa/Fasta2Structure/assets/16911690/2f3363e9-4b9a-4c30-b53e-3969d9021a11)
+
 
 
 Windows Version
